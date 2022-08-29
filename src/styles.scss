@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary {
+  @apply text-white bg-blue-500 hover:bg-blue-600 p-2 rounded-md;
+}
+
+.footer {
+  @apply bg-primary w-full flex justify-between absolute bottom-0 p-4;
+}
+
+h1 {
+  @apply text-2xl mb-4;
+}
+
+.close-icon {
+  @apply relative left-full -translate-x-full;
+}
