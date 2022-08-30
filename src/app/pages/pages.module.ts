@@ -3,6 +3,10 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { NgModule } from '@angular/core';
+import { ConocenosComponent } from './conocenos/conocenos.component';
+import { ServiciosComponent } from './servicios/servicios.component';
+import { TerapiaComponent } from './terapia/terapia.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 
@@ -10,6 +14,10 @@ import { NgModule } from '@angular/core';
   declarations: [
     PagesComponent,
     HomeComponent,
+    ConocenosComponent,
+    ServiciosComponent,
+    TerapiaComponent,
+    ContactoComponent,
   ],
   exports: [
     PagesComponent,

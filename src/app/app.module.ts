@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 
 import { NgModule } from '@angular/core';
@@ -15,7 +16,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn-primary {
-  @apply text-white bg-blue-500 hover:bg-blue-600 p-2 rounded-md;
-}
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap");
 
-.footer {
-  @apply bg-primary w-full flex justify-between absolute bottom-0 p-4;
-}
+body {
+  //TODO Buscar un tipo de letra para los textos en general
 
-h1 {
-  @apply text-2xl mb-4;
-}
+  .btn-primary {
+    @apply text-white bg-blue-500 hover:bg-blue-600 p-2 rounded-md;
+  }
 
-.close-icon {
-  @apply relative left-full -translate-x-full;
+  h1 {
+    @apply text-2xl font-amita font-bold mb-4;
+  }
+
+  h2 {
+    @apply text-lg font-amita font-bold mb-2;
+  }
+
+  .icon:hover {
+    @apply text-primary;
+    cursor: pointer;
+  }
+
+  .close.icon {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+  }
 }

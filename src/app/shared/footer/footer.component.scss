@@ -1,0 +1,27 @@
+.footer-wrapper {
+  @apply bg-primary;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      a:hover {
+        @apply text-secondary;
+      }
+
+      .icon {
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
